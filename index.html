@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>ARRAY, FUNCTIONS & OBJECTS</h1>
+    <h3>1. Create an array of five numbers and print all elements.</h3>
+    <p>
+        let num = [1, 2, 3, 4, 5, 6, 7, 8]
+        console.log(num)
+    </p>
+    <h3>
+        2. Create an array of three fruits and print the first and last elements.
+    </h3>
+    <p>
+        let fruit = ['mango','nanana','orange']
+        console.log(fruit[0])
+        console.log(fruit[2])
+    </p>
+    <h3>
+        3. Add "Mango" to the end of an array using push().
+    </h3>
+    <p>
+        let frut = ['banana','apple']
+        frut.push('mango')
+        console.log(frut)
+    </p>
+    <h3>
+        4. Find the length of the following array.
+    </h3>
+    <p>
+        let number = [10, 20, 30, 40, 50];
+        console.log(number.length);
+    </p>
+    <h3>
+        5. Write a function that prints "Hello World".
+    </h3>
+    <p>
+        function myfunc() {
+        console.log('Hello World')
+        }
+        myfunc()
+    </p>
+    <h3>
+        6. Write a function that takes two numbers as parameters and prints their sum.
+    </h3>
+    <p>
+        function mysum(a,b){
+        console.log(a + b)
+        }
+        mysum(6,8)
+    </p>
+    <h3>
+        7. Write a function that takes a number and returns its square.
+    </h3>
+    <p>
+        function square(n){
+        return n * n
+        }
+        let result = square(8)
+        console.log(result)
+    </p>
+    <h3>
+        8. Write a function that checks whether a number is even or odd.
+    </h3>
+    <p>
+        function check(a) {
+        if (a % 2 === 0) {
+        console.log("Even Number");
+        } else {
+        console.log("Odd Number");
+        }
+        }
+        check(8)
+    </p>
+    <h3>
+        9. Write a function to find the largest of two numbers.
+    </h3>
+    <p>
+        function large(a, b) {
+        if (a > b) {
+        console.log(a + " is larger")
+        } else {
+        console.log(b + " is larger")
+        }
+        }
+        large(15, 25)
+    </p>
+    <h3>
+        10. Write a function that takes a name as an argument and prints a welcome message.
+    </h3>
+    <p>
+        function wel(name){
+        console.log('welcome '+ name)
+        }
+        wel('amna')
+    </p>
+    <h3>
+        11. Create a student object with name, age, and class properties. Print all three properties.
+    </h3>
+    <p>
+        let student = {
+        name : 'Amna',
+        age : 16,
+        class : 'XI'
+        }
+        console.log(student)
+    </p>
+    <h3>
+        12. Create a car object with brand, model, and color properties. Print the car's brand.
+    </h3>
+    <p>
+        let car = {
+        brand: "Toyota",
+        model: "Camry",
+        color: "Silver"
+        }
+        console.log(car.brand)
+    </p>
+    <h3>
+        13. Update the age of the following student object to 20 and print it:
+    </h3>
+    <p>
+        student.age = 20
+        console.log(student)
+    </p>
+    <h3>
+        14. Create an object for a student with name and marks properties. Write a function that prints the student's
+        name and marks.
+    </h3>
+    <p>
+        const stu ={
+        name:'Ali',
+        marks: 96
+        }
+        function myfunc(stu){
+        console.log(stu.name)
+        console.log(stu.marks)
+        }
+        myfunc(stu)
+    </p>
+</body>
+<script>
+    let num = [1, 2, 3, 4, 5, 6, 7, 8]
+    console.log(num)
+
+    let fruit = ['mango', 'nanana', 'orange']
+    console.log(fruit[0])
+    console.log(fruit[2])
+
+    let frut = ['banana', 'apple']
+    frut.push('mango')
+    console.log(frut)
+
+    let number = [10, 20, 30, 40, 50];
+    console.log(number.length);
+
+    function myfunc() {
+        console.log('Hello World')
+    }
+
+
+    function mysum(a, b) {
+        console.log(a + b)
+    }
+    mysum(6, 8)
+
+    function square(n) {
+        return n * n
+    }
+    let result = square(8)
+    console.log(result)
+
+    function check(a) {
+        if (a % 2 === 0) {
+            console.log("Even Number");
+        } else {
+            console.log("Odd Number");
+        }
+    }
+    check(8)
+
+    function large(a, b) {
+        if (a > b) {
+            console.log(a + " is larger")
+        } else {
+            console.log(b + " is larger")
+        }
+    }
+    large(15, 25)
+
+    function wel(name) {
+        console.log('welcome ' + name)
+    }
+    wel('amna')
+
+    let student = {
+        name: 'Amna',
+        age: 16,
+        class: 'XI'
+    }
+    console.log(student)
+
+    let car = {
+        brand: "Toyota",
+        model: "Camry",
+        color: "Silver"
+    }
+    console.log(car.brand)
+
+    student.age = 20
+    console.log(student)
+
+    const studentobj = {
+        name: 'Ali',
+        marks: 96
+    }
+    function myfunc(stu) {
+        console.log(stu.name)
+        console.log(stu.marks)
+    }
+    myfunc(studentobj)
+</script>
+
+</html>
